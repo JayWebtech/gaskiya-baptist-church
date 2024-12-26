@@ -2,20 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "DMSans";
+  src: url("../../public/fonts/DMSans-Regular.ttf") format("truetype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: "DMSansLight";
+  src: url("../../public/fonts/DMSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DMSansBold";
+  src: url("../../public/fonts/DMSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Millik";
+  src: url("../../public/fonts/Millik.ttf") format("truetype");
+}
+
+* {
+  font-family: "DMSans";
+}
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../../public/img/hero.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  50% {
+    transform: translateY(-10px);
+  }
 }
