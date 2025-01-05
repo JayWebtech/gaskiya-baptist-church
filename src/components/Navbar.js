@@ -17,7 +17,7 @@ function Navbar({
 
   const accountDetails = {
     accountName: "Gaskiya Baptist Church",
-    accountNumber: "1234567890",
+    accountNumber: "0020393990",
     bankName: "Union Bank",
   };
 
