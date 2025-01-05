@@ -30,7 +30,7 @@ export default function Home() {
           handleRefClick={handleRefClick}
         />
         <div className="mb-2 container mx-auto px-4 sm:px-10 md:px-8 lg:px-16">
-          <div className="flex flex-col items-center justify-center my-36">
+          <div className="flex flex-col items-center justify-center my-32">
             <h1 className="text-[2rem] xl:text-[5rem] font-Millik text-white text-center">
               Welcome to <br />
               Gaskiya Baptist Church
@@ -41,7 +41,10 @@ export default function Home() {
               <br /> Join us for services, events, and more as we grow together
               in faith.
             </p>
-            <button className="bg-second py-4 px-10 xl:text-base text-sm text-black mt-10" onClick={() => handleRefClick(aboutRef)}>
+            <button
+              className="bg-second py-4 px-10 xl:text-base text-sm text-black mt-10"
+              onClick={() => handleRefClick(aboutRef)}
+            >
               Learn more about us
             </button>
             <div
@@ -140,7 +143,7 @@ export default function Home() {
                   className="w-full h-[20rem] object-cover rounded-t-lg mb-4"
                 />
                 <h3 className="text-xl font-DMSansBold text-primary">
-                  Bro. Manasseh Yakubu
+                  Rev. Shekolo
                 </h3>
                 <p className="text-gray-700">Deacon</p>
                 <p className="text-gray-600 mt-2">
@@ -157,7 +160,7 @@ export default function Home() {
                   className="w-full h-[20rem] object-cover rounded-t-lg mb-4"
                 />
                 <h3 className="text-xl font-DMSansBold text-primary">
-                  Elder James Johnson
+                  Rev. Shekolo
                 </h3>
                 <p className="text-gray-700">Elder</p>
                 <p className="text-gray-600 mt-2">
@@ -170,7 +173,7 @@ export default function Home() {
           </div>
         </section>
         <section
-          className="bg-primary text-white p-5 xl:p-16 text-center"
+          className="bg-primary text-white p-5 xl:p-16"
           ref={activitiesRef}
         >
           <h2 className="text-4xl font-DMSansBold mb-4">Weekly Activities</h2>
@@ -181,83 +184,116 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <div className="bg-white text-primary p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-DMSansBold mb-2">
-                Sunday Worship Service
-              </h3>
-              <p className="text-lg mb-2">
-                <strong>Time:</strong> 10:00 AM
+            <div className="bg-white text-primary p-6 rounded-lg shadow-lg sm:col-span-2 md:col-span-3">
+              <h3 className="text-2xl font-DMSansBold mb-2">SUNDAYS</h3>
+              <p className="text-primary text-lg font-DMSansBold">
+                Sunday school
               </p>
-              <p className="text-gray-700">
-                Join us for our weekly worship service, where we gather together
-                in praise, worship, and teaching. All are welcome to experience
-                the love of Christ through song, prayer, and fellowship.
+              <p className="text-black">Time: 7:30am</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Discipleship lifestyle
               </p>
+              <p className="text-black">Time: 8:30am</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Sunday service
+              </p>
+              <p className="text-black">Time: 9:30am</p>
             </div>
 
             <div className="bg-white text-primary p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-DMSansBold mb-2">Bible Study</h3>
-              <p className="text-lg mb-2">
-                <strong>Time:</strong> Wednesday 7:00 PM
+              <h3 className="text-2xl font-DMSansBold mb-2">MONDAYS</h3>
+              <p className="text-primary text-lg font-DMSansBold">
+                Redeemers choir
               </p>
-              <p className="text-gray-700">
-                Deepen your understanding of God’s word during our weekly Bible
-                study. Come join us as we explore the Scriptures together and
-                grow in faith.
+              <p className="text-black">Time: 3:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Youth fellowship
               </p>
+              <p className="text-black">Time: 5:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Victory hour(prayer band)
+              </p>
+              <p className="text-black">Time: 6:00pm</p>
             </div>
 
             <div className="bg-white text-primary p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-DMSansBold mb-2">Prayer Meeting</h3>
-              <p className="text-lg mb-2">
-                <strong>Time:</strong> Tuesday 6:00 PM
+              <h3 className="text-2xl font-DMSansBold mb-2">TUESDAYS</h3>
+              <p className="text-primary text-lg font-DMSansBold">
+                Salvation voices
               </p>
-              <p className="text-gray-700">
-                Our weekly prayer meeting is an opportunity for the church
-                community to come together in prayer for each other, our church,
-                and the world. All are invited to join us as we lift up our
-                prayers to God.
+              <p className="text-black">Time: 4:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Rejoice singers
               </p>
+              <p className="text-black">Time: 6:00pm</p>
             </div>
 
             <div className="bg-white text-primary p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-DMSansBold mb-2">Youth Group</h3>
-              <p className="text-lg mb-2">
-                <strong>Time:</strong> Friday 7:00 PM
+              <h3 className="text-2xl font-DMSansBold mb-2">WEDNESDAYS</h3>
+              <p className="text-primary text-lg font-DMSansBold">
+                Redeemers choir
               </p>
-              <p className="text-gray-700">
-                Our Youth Group is a safe space for young people to grow in
-                their faith, make friends, and have fun. Join us for Bible
-                discussions, games, and exciting activities every Friday
-                evening.
+              <p className="text-black">Time: 3:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Midweek service
               </p>
+              <p className="text-black">Time: 5:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Men's Fellowship (MMU)
+              </p>
+              <p className="text-black">Time: 6:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Royal Ambassador
+              </p>
+              <p className="text-black">Time: 6:00pm</p>
             </div>
 
             <div className="bg-white text-primary p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-DMSansBold mb-2">
-                Community Outreach
-              </h3>
-              <p className="text-lg mb-2">
-                <strong>Time:</strong> Saturday 9:00 AM
+              <h3 className="text-2xl font-DMSansBold mb-2">THURSDAYS</h3>
+              <p className="text-primary text-lg font-DMSansBold">
+                Salvation voices
               </p>
-              <p className="text-gray-700">
-                Join us for our weekly outreach program as we serve those in
-                need within our community. Whether it's distributing food,
-                helping the homeless, or organizing community events, your hands
-                and heart are needed.
+              <p className="text-black">Time: 4:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Rejoice singers
               </p>
+              <p className="text-black">Time: 6:00pm</p>
             </div>
 
             <div className="bg-white text-primary p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-DMSansBold mb-2">Choir Practice</h3>
-              <p className="text-lg mb-2">
-                <strong>Time:</strong> Thursday 6:30 PM
+              <h3 className="text-2xl font-DMSansBold mb-2">FRIDAYS</h3>
+              <p className="text-primary text-lg font-DMSansBold">
+                Women's fellowship (WMU)
               </p>
-              <p className="text-gray-700">
-                Our choir meets weekly to rehearse for Sunday services and
-                special events. If you love to sing and want to use your talents
-                in worship, come join us!
+              <p className="text-black">Time: 3:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Baptist student fellowship (BSF)
               </p>
+              <p className="text-black">Time: 5:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Sunday school preparative class
+              </p>
+              <p className="text-black">Time: 5:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Royal Ambassador
+              </p>
+              <p className="text-black">Time: 6:00pm</p>
+            </div>
+
+            <div className="bg-white text-primary p-6 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-DMSansBold mb-2">SATURDAYS</h3>
+              <p className="text-primary text-lg font-DMSansBold">
+                Church sanitation/Cleaning
+              </p>
+              <p className="text-black">Time: 7:00am</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Salvation voices
+              </p>
+              <p className="text-black">Time: 4:00pm</p>
+              <p className="text-primary text-lg font-DMSansBold">
+                Rejoice singers
+              </p>
+              <p className="text-black">Time: 6:00pm</p>
             </div>
           </div>
         </section>
@@ -271,12 +307,13 @@ export default function Home() {
             Gaskiya Baptist Church
           </h3>
           <p className="text-white text-lg">Bayan Dutse, Narayi</p>
-          <a href="">
-          <div className="flex gap-3 mt-5 items-center text-white cursor-pointer">
-            <FaFacebook className="text-white text-xl" />
-            <span>Follow us on facebook</span>
-          </div>
+          <a href="https://www.facebook.com/groups/1212530889552074/" target="_blank">
+            <div className="flex gap-3 mt-5 items-center text-white cursor-pointer">
+              <FaFacebook className="text-white text-xl" />
+              <span>Follow us on facebook</span>
+            </div>
           </a>
+          <span className="text-white">08023784330</span>
         </div>
       </section>
     </div>
